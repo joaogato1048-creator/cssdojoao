@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="PT">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade função</title>
 </head>
+
 <body>
-<script>
-    function mostrar() {
-        for (let i = 0; i < 10; i++) {
-            console.log(i);
-        } 
-        }
-        mostrar();
-    
-    function menosmostrar() {
-        let i = 10;
-        while (i > 0) {
-            i -= 10 - i;
-            i++;
-        }
-    }
-    function mostrarpares(){
-        for (let i = 0; i < 21; i++) {
-            if (i % 2 === 0) {
+    <script>
+        function mostrar() {
+            for (let i = 0; i < 10; i++) {
                 console.log(i);
             }
         }
-    }
-    function array1() {
-        let array = [1, 2, 3, 4, 5];
-        for (let i = 0; i < array.length; i++) {
-            console.log(array[i]);
+        mostrar();
+
+        function menosmostrar() {
+            let i = 10;
+            while (i > 0) {
+                i -= 10 - i;
+                i++;
+            }
+        }
+        function mostrarpares() {
+            for (let i = 0; i < 21; i++) {
+                if (i % 2 === 0) {
+                    console.log(i);
+                }
+            }
+        }
+          function array1() {
+        let array = ["Ana", "Carlos", "Joicy"];
+        for (let array of array) {
+            console.log(array); 
+        }
+        
+        }
+        
+        switch (ATIVIDADE) {
+            case 1:
+                mostrar();
+                break;
+            case 2:
+                menosmostrar();
+                break;
+            case 3:
+                mostrarpares();
+                break;
+            case 4:
+                array1();
+                break;
         }
 
-    }
-    switch (ATIVIDADE){
-        case 1:
-            mostrar();
-            break;
-        case 2:
-            menosmostrar();
-            break;
-        case 3:
-            mostrarpares();
-            break;
-        case 4:
-            array1();
-            break;
-    }
-
-</script>
+    </script>
 </body>
+
 </html>
